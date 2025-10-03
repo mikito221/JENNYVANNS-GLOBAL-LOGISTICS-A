@@ -1,0 +1,30 @@
+body::before{
+    display: block;
+    content: "";
+    height: 55px;
+}
+
+#boxes .card{
+    min-height: 260px;
+}
+
+html, body {
+  overflow-x: hidden;  /* stops sideways scroll */
+}
+
+.text-wrap {
+  white-space: normal !important; /* force text to break */
+  word-wrap: break-word;
+}
+
+
+#agent img{
+    width: 132px;
+    background-color: rgb(190, 190, 190);
+}
+
+@media(min-width: 768px){
+    .news-input{
+        width: 50%;
+    }
+}
