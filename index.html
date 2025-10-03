@@ -21,6 +21,8 @@
 </head>
 
 <body>
+
+    
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-light p-2 fixed-top">
         <div class="container">
@@ -725,48 +727,6 @@
             </a>
         </div>
     </section>
-
-    <!-- Welcome Intro Overlay -->
-<div id="welcome-overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark d-flex align-items-center justify-content-center text-light" style="z-index: 2000;">
-  <div class="text-center p-4">
-    <h1 id="welcome-text" class="mb-3"></h1>
-    <p id="sub-text" class="lead"></p>
-  </div>
-</div>
-
-<!-- js script -->
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const mainText = "👋 Welcome to Jennyvanns Global Logistics!";
-    const subText = "We specialize in freight forwarding, customs clearance, and risk management. Reliable. Transparent. On Time. Every Time.";
-    let i = 0;
-
-    // Typewriter effect
-    function typeWriter() {
-      if (i < mainText.length) {
-        document.getElementById("welcome-text").innerHTML += mainText.charAt(i);
-        i++;
-        setTimeout(typeWriter, 80); // typing speed
-      } else {
-        // Show subtext after main text finishes
-        setTimeout(() => {
-          document.getElementById("sub-text").textContent = subText;
-        }, 500);
-      }
-    }
-    typeWriter();
-
-    // Fade out overlay after a few seconds
-    setTimeout(() => {
-      const overlay = document.getElementById("welcome-overlay");
-      overlay.style.transition = "opacity 1s ease";
-      overlay.style.opacity = 0;
-      setTimeout(() => overlay.style.display = "none", 1000);
-    }, 7000); // stays 7 seconds
-  });
-</script>
-
 
     <script src="js/main.js"></script>
 </body>
